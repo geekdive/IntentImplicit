@@ -17,14 +17,17 @@ startActivity(Intent.createChooser(intent, "Send Email"));
 
 <img src="https://github.com/moeslimdecoded/IntentImplicitMail/blob/master/IntentImplicitMail.png">
 
+Aplikasi Phones:
+
 ```
 System.out.println("Your Number is: " + edtPhones.getText().toString());
 Intent i = new Intent(android.content.Intent.ACTION_VIEW, Uri.parse("tel:" + edtPhones.getText().toString()));
 startActivity(i);
 ```
 
-Aplikasi Phones:
 <img src="https://github.com/moeslimdecoded/IntentImplicitMail/blob/master/IntentImplicitPhones.png">
+
+Aplikasi Browser: <br>
 
 ```
 System.out.println("Your URL is: " + edtBrowser.getText().toString());
@@ -32,7 +35,6 @@ Intent i = new Intent(android.content.Intent.ACTION_VIEW, Uri.parse("https://" +
 startActivity(i);
 ```
 
-Aplikasi Browser: <br>
 <img src="https://github.com/moeslimdecoded/IntentImplicitMail/blob/master/lock1.png" widht="1000" height="400"> 
 <img src="https://github.com/moeslimdecoded/IntentImplicitMail/blob/master/lock2.png" widht="1000" height="400">
 <img src="https://github.com/moeslimdecoded/IntentImplicitMail/blob/master/IntentImplicitBrowser.png">
