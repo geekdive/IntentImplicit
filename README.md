@@ -35,6 +35,5 @@ Intent i = new Intent(android.content.Intent.ACTION_VIEW, Uri.parse("https://" +
 startActivity(i);
 ```
 <br>
-<img src="https://github.com/moeslimdecoded/IntentImplicitMail/blob/master/lock1.png" widht="1000" height="400"> 
-<img src="https://github.com/moeslimdecoded/IntentImplicitMail/blob/master/lock2.png" widht="1000" height="400">
+<img src="https://github.com/moeslimdecoded/IntentImplicitMail/blob/master/lock1.png" widht="1000" height="400"> <img src="https://github.com/moeslimdecoded/IntentImplicitMail/blob/master/lock2.png" widht="1000" height="400">
 <img src="https://github.com/moeslimdecoded/IntentImplicitMail/blob/master/IntentImplicitBrowser.png">
