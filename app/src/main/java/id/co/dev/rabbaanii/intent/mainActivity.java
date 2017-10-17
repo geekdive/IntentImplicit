@@ -2,6 +2,7 @@ package id.co.dev.rabbaanii.intent;
 
 import android.content.Intent;
 import android.net.Uri;
+import android.provider.ContactsContract;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -19,6 +20,7 @@ public class mainActivity extends AppCompatActivity {
         Button btnImplicitMail = (Button)findViewById(R.id.intentImplicitMail);
         Button btnImplicitPhone = (Button)findViewById(R.id.intentImplicitPhon);
         Button btnImplicitBrowser = (Button)findViewById(R.id.intentImplicitBrowser);
+        Button btnImplicitContact = (Button)findViewById(R.id.intentImplicitContact);
 
         final EditText edtEmail, edtSubjek, edtBody, edtPhones, edtBrowser;
 
@@ -67,6 +69,16 @@ public class mainActivity extends AppCompatActivity {
                 Intent i = new Intent(android.content.Intent.ACTION_VIEW,
                         Uri.parse("https://" + edtBrowser.getText().toString()));
                 startActivity(i);
+            }
+        });
+
+        btnImplicitContact.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent goToContact = new Intent();
+                goToContact.setAction(android.content.Intent.ACTION_VIEW);
+                goToContact.setData(ContactsContract.Contacts.CONTENT_URI);
+                startActivity(goToContact);
             }
         });
     }

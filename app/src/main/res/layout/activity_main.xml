@@ -91,10 +91,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
 
+            <Button
+                android:text="\n intent implicit to contact \n(intent keluar aplikasi)\n"
+                android:id="@+id/intentImplicitContact"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
         </LinearLayout>
 
     </ScrollView>
-
-
 
 </LinearLayout>
