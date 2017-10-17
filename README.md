@@ -53,4 +53,4 @@ startActivity(goToContact);
 ```
 
 <img src="https://github.com/moeslimdecoded/IntentImplicitMail/blob/master/IntentImplicitContact.png">
-<img src="https://github.com/moeslimdecoded/IntentImplicit/blob/master/lock3.png" widht="1000" height="400"
+<img src="https://github.com/moeslimdecoded/IntentImplicit/blob/master/lock3.png" widht="1000" height="400">
