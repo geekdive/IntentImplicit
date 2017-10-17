@@ -33,6 +33,6 @@ startActivity(i);
 ```
 
 Aplikasi Browser:
-<img src="https://github.com/moeslimdecoded/IntentImplicitMail/blob/master/lock1.png">
-<img src="https://github.com/moeslimdecoded/IntentImplicitMail/blob/master/lock2.png">
+<img src="https://github.com/moeslimdecoded/IntentImplicitMail/blob/master/lock1.png" widht="1080" height="1920">
+<img src="https://github.com/moeslimdecoded/IntentImplicitMail/blob/master/lock2.png" widht="1080" height="1920">
 <img src="https://github.com/moeslimdecoded/IntentImplicitMail/blob/master/IntentImplicitBrowser.png">
