@@ -34,9 +34,23 @@ System.out.println("Your URL is: " + edtBrowser.getText().toString());
 Intent i = new Intent(android.content.Intent.ACTION_VIEW, Uri.parse("https://" + edtBrowser.getText().toString()));
 startActivity(i);
 ```
+
 <br>
 Result:
 <br>
 <img src="https://github.com/moeslimdecoded/IntentImplicitMail/blob/master/lock2.png" widht="1000" height="400">
 <img src="https://github.com/moeslimdecoded/IntentImplicitMail/blob/master/IntentImplicitBrowser.png">
 <img src="https://github.com/moeslimdecoded/IntentImplicitMail/blob/master/lock1.png" widht="1000" height="400">
+
+<br>
+Aplikasi Browser: 
+
+```
+Intent goToContact = new Intent();
+goToContact.setAction(android.content.Intent.ACTION_VIEW);
+goToContact.setData(ContactsContract.Contacts.CONTENT_URI);
+startActivity(goToContact);
+```
+
+<img src="https://github.com/moeslimdecoded/IntentImplicitMail/blob/master/IntentImplicitContact.png">
+<img src="https://github.com/moeslimdecoded/IntentImplicitMail/blob/master/lock3.png" widht="1000" height="400"
