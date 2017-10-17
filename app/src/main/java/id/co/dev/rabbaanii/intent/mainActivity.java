@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 
 public class mainActivity extends AppCompatActivity {
@@ -15,13 +16,15 @@ public class mainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button btnImplicit = (Button)findViewById(R.id.intentImplicit);
+        Button btnImplicitMail = (Button)findViewById(R.id.intentImplicitMail);
+        Button btnImplicitPhone = (Button)findViewById(R.id.intentImplicitPhon);
 
-        final TextView edtEmail, edtSubjek, edtBody;
+        final EditText edtEmail, edtSubjek, edtBody, edtPhones;
 
-        edtSubjek = (TextView)findViewById(R.id.edSubject);
-        edtBody = (TextView)findViewById(R.id.edBody);
-        edtEmail = (TextView)findViewById(R.id.edEmail);
+        edtSubjek = (EditText)findViewById(R.id.edSubject);
+        edtBody = (EditText)findViewById(R.id.edBody);
+        edtEmail = (EditText)findViewById(R.id.edEmail);
+        edtPhones = (EditText)findViewById(R.id.telp);
 
 
         final CharSequence emaildo, subjdo, bodydo;
@@ -30,7 +33,7 @@ public class mainActivity extends AppCompatActivity {
         subjdo = edtSubjek.getText();
         bodydo = edtBody.getText();
 
-        btnImplicit.setOnClickListener(new View.OnClickListener() {
+        btnImplicitMail.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 System.out.println("Email :" + emaildo);
@@ -43,6 +46,17 @@ public class mainActivity extends AppCompatActivity {
                 intent.putExtra(Intent.EXTRA_TEXT, bodydo);
 
                 startActivity(Intent.createChooser(intent, "Send Email"));
+            }
+        });
+
+
+
+        btnImplicitPhone.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                System.out.println("Your Number is: " + edtPhones.getText().toString());
+                Intent i = new Intent(android.content.Intent.ACTION_VIEW, Uri.parse("tel:" + edtPhones.getText().toString()));
+                startActivity(i);
             }
         });
     }
