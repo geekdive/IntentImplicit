@@ -54,7 +54,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
-
             <TextView
                 android:layout_marginTop="20dp"
                 android:layout_width="match_parent"
@@ -71,6 +70,26 @@
                 android:id="@+id/intentImplicitPhon"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Link URL:"/>
+
+            <EditText
+                android:ems="20"
+                android:textSize="13sp"
+                android:hint="example: android.com"
+                android:id="@+id/toBrowser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:text="\n intent implicit to browser \n(intent keluar aplikasi)\n"
+                android:id="@+id/intentImplicitBrowser"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
 
         </LinearLayout>
 

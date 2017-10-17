@@ -18,13 +18,15 @@ public class mainActivity extends AppCompatActivity {
 
         Button btnImplicitMail = (Button)findViewById(R.id.intentImplicitMail);
         Button btnImplicitPhone = (Button)findViewById(R.id.intentImplicitPhon);
+        Button btnImplicitBrowser = (Button)findViewById(R.id.intentImplicitBrowser);
 
-        final EditText edtEmail, edtSubjek, edtBody, edtPhones;
+        final EditText edtEmail, edtSubjek, edtBody, edtPhones, edtBrowser;
 
         edtSubjek = (EditText)findViewById(R.id.edSubject);
         edtBody = (EditText)findViewById(R.id.edBody);
         edtEmail = (EditText)findViewById(R.id.edEmail);
         edtPhones = (EditText)findViewById(R.id.telp);
+        edtBrowser = (EditText)findViewById(R.id.toBrowser);
 
 
         final CharSequence emaildo, subjdo, bodydo;
@@ -49,13 +51,21 @@ public class mainActivity extends AppCompatActivity {
             }
         });
 
-
-
         btnImplicitPhone.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 System.out.println("Your Number is: " + edtPhones.getText().toString());
                 Intent i = new Intent(android.content.Intent.ACTION_VIEW, Uri.parse("tel:" + edtPhones.getText().toString()));
+                startActivity(i);
+            }
+        });
+
+        btnImplicitBrowser.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                System.out.println("Your URL is: " + edtBrowser.getText().toString());
+                Intent i = new Intent(android.content.Intent.ACTION_VIEW,
+                        Uri.parse("https://" + edtBrowser.getText().toString()));
                 startActivity(i);
             }
         });
