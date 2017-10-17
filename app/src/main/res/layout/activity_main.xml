@@ -91,6 +91,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
 
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Go To Contact Room:"/>
+
             <Button
                 android:text="\n intent implicit to contact \n(intent keluar aplikasi)\n"
                 android:id="@+id/intentImplicitContact"
