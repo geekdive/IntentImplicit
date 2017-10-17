@@ -25,3 +25,14 @@ startActivity(i);
 
 Aplikasi Phones:
 <img src="https://github.com/moeslimdecoded/IntentImplicitMail/blob/master/IntentImplicitPhones.png">
+
+```
+System.out.println("Your URL is: " + edtBrowser.getText().toString());
+Intent i = new Intent(android.content.Intent.ACTION_VIEW, Uri.parse("https://" + edtBrowser.getText().toString()));
+startActivity(i);
+```
+
+Aplikasi Browser:
+<img src="https://github.com/moeslimdecoded/IntentImplicitMail/blob/master/lock1.png">
+<img src="https://github.com/moeslimdecoded/IntentImplicitMail/blob/master/lock2.png">
+<img src="https://github.com/moeslimdecoded/IntentImplicitMail/blob/master/IntentImplicitBrowser.png">
